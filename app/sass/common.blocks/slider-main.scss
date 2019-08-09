@@ -20,7 +20,7 @@
 }
 
 .slider-item {
-  background-image: url("../../img/slider-bg.png");
+  background-image: url("../img/slider-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% auto;
@@ -40,7 +40,7 @@
 
 .slick-next:after {
   content: '' !important;
-  background: url("../../img/slick-arrow.svg") no-repeat center !important;
+  background: url("../img/slick-arrow.svg") no-repeat center !important;
   background-size: 100% auto;
   width: 19px;
   height: 28px;
@@ -54,7 +54,7 @@
 
 .slick-prev:after {
   content: '' !important;
-  background: url("../../img/slick-arrow.svg") no-repeat center !important;
+  background: url("../img/slick-arrow.svg") no-repeat center !important;
   background-size: 100% auto;
   width: 19px;
   height: 28px;
