@@ -1,0 +1,34 @@
+.card-stage {
+  min-height: 388px;
+  height: 388px;
+
+  .card-title {
+    font-size: 20px;
+    line-height: 29px;
+    color: #555555;
+  }
+
+  .card-text {
+    font-size: 16px;
+    line-height: 23px;
+    color: #555555;
+  }
+
+  .card-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.card-stage__img {
+  min-height: 146px;
+  height: 146px;
+  position: relative;
+  overflow: hidden;
+
+  .card-img-top {
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}

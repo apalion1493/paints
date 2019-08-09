@@ -1,0 +1,27 @@
+.card-category {
+
+  .card-body {
+    padding-top: 10px;
+  }
+
+  .card-title {
+    margin-bottom: 16px;
+  }
+
+  .card-category__img {
+    height: 146.5px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-img-top {
+    position: absolute;
+    top: 0;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 16px;
+    line-height: 23px;
+    color: #555555;
+  }
+}

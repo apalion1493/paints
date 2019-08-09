@@ -1,0 +1,48 @@
+.card-brand {
+  min-height: 432px;
+  height: 100%;
+
+  .card-body {
+    padding-top: 15px;
+  }
+
+  .btn {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    max-width: 109px;
+  }
+
+  .card-brand__img {
+    min-height: 178px;
+    height: 178px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 8px;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .card-img-top {
+      position: absolute;
+      top: 0;
+      height: 100%;
+    }
+  }
+
+  .card-title {
+    font-size: 25px;
+    line-height: 36px;
+    color: #333333;
+    margin-bottom: 9px;
+  }
+
+  .card-text {
+    font-size: 16px;
+    line-height: 25px;
+    color: #555555;
+  }
+}
