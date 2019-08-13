@@ -125,12 +125,17 @@
   justify-content: center;
   align-items: center;
   padding-left: 14px;
-  padding-right: 17px;
+  padding-right: 14px;
   margin-right: 2px;
   width: 226px;
 
   .form-group {
     max-width: 195px;
+  }
+
+  input {
+    height: 29px;
+    font-size: 0.8em;
   }
 }
 
@@ -180,6 +185,22 @@
   padding: 15px 20px;
   background: #414247;
   border-radius: 3px;
+}
+
+.navigation-block__search-btn {
+  height: 29px;
+  font-size: 0.8em;
+  color: #ffffff;
+  line-height: 19px;
+  min-width: 42px;
+  background: linear-gradient(247.83deg, #E96F67 8.79%, #EE5050 93.01%);
+  border-radius: 2px;
+  border: none;
+
+  &:hover {
+    box-shadow: 0 0 0 0.2rem rgba(232, 113, 100, 0.5);
+    transition: 0.3s;
+ }
 }
 
 @media (max-width: 767.98px) {

@@ -35,7 +35,7 @@
     </div>
 </header>
 
-<main>
+<main class="paints-main">
     <section class="container-fluid slider-section overflow-hidden">
         <div class="slider">
             <div class="slider-item">
@@ -160,7 +160,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">白夜系列</h5>
-                            <p class="card-text">"专业水彩颜料系列“白夜”，“涅瓦色调”工厂的代表性产品。“白夜”，是经时间检验了的艺术水彩颜料。<br>
+                            <p class="card-text">专业水彩颜料系列“白夜”，“涅瓦色调”工厂的代表性产品。“白夜”，是经时间检验了的艺术水彩颜料。<br>
                                 适于追求颜色真实性和作品耐久性的艺术家使用。高品质的颜料和粘合剂、完善的制作技术 保证了水彩颜料的特性，如亮度、</p>
                             <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
@@ -179,7 +179,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">大师级系列</h5>
-                            <p class="card-text">"大师级系列专注于对产品要求极高的客户，如专业艺术家，他们非常注重风格的独特性，希望绘画作品能够保存更长的时间。精心研究确定的成分比例、传统生产技术和严格的产品质量控制能够确保满足创作最重要的艺术作品对颜料的要求。</p>
+                            <p class="card-text">大师级系列专注于对产品要求极高的客户，如专业艺术家，他们非常注重风格的独特性，希望绘画作品能够保存更长的时间。精心研究确定的成分比例、传统生产技术和严格的产品质量控制能够确保满足创作最重要的艺术作品对颜料的要求。</p>
                             <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">“涅瓦色调”天然艺术画笔</h5>
-                            <p class="card-text">"“涅瓦色调”品牌在艺术家中享有很高的声誉，因为自1934年以来，我们就制作艺术家创作所需的一切用品。 <br>我们公司的技术专家与专业艺术家密切合作，一直致力于丰富产品种类。
+                            <p class="card-text">“涅瓦色调”品牌在艺术家中享有很高的声誉，因为自1934年以来，我们就制作艺术家创作所需的一切用品。 <br>我们公司的技术专家与专业艺术家密切合作，一直致力于丰富产品种类。
                                 画笔生产是一项多工序的复杂工作，多年来我们不断完善生产技术，依靠数十年画笔生产中</p>
                             <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
@@ -542,7 +542,7 @@
     </section>
 </main>
 
-<footer class="">
+<footer class="footer">
     <div class="container-fluid footer-menu">
         <div class="container">
             <ul class="footer-menu__ul">
@@ -557,32 +557,32 @@
     </div>
     <div class="container-fluid footer-contact">
         <div class="container">
-             <div class="row">
-                 <div class="col-4">
-                     <div class="footer-contact__location">
-                         <span class="footer-icon-point"></span>
-                         <div class="footer-contact__location-text">
-                             <p>地址：俄羅斯，聖彼得</p>
-                             <p>堡，Serdobolskaya ul。 68，字母</p>
-                             <p>F，房間17</p>
-                         </div>
-                     </div>
-                 </div>
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="footer-contact__location">
+                        <span class="footer-icon-point"></span>
+                        <div class="footer-contact__location-text">
+                            <p>地址：俄羅斯，聖彼得</p>
+                            <p>堡，Serdobolskaya ul。 68，字母</p>
+                            <p>F，房間17</p>
+                        </div>
+                    </div>
+                </div>
 
-                 <div class="col-4">
-                     <div class="footer-contact__phone">
-                         <span class="footer-icon-phone"></span>
-                         <div class="footer-contact__phone-text">
-                             <p>电话 <span> 0535-2480037</span></p>
-                             <p>电子邮件: <span>export@artpaints.ru</span></p>
-                         </div>
-                     </div>
-                 </div>
+                <div class="col-sm-4 col-12">
+                    <div class="footer-contact__phone">
+                        <span class="footer-icon-phone"></span>
+                        <div class="footer-contact__phone-text">
+                            <p>电话 <span> 0535-2480037</span></p>
+                            <p>电子邮件: <span>export@artpaints.ru</span></p>
+                        </div>
+                    </div>
+                </div>
 
-                 <div class="col-4">
-                     <img class="ml-auto d-block" src="img/qr-code.png" alt="">
-                 </div>
-             </div>
+                <div class="col-sm-4 col-12">
+                    <img class="footer-qr" src="img/qr-code.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid footer-copy">
@@ -612,8 +612,9 @@
 
             <div class="navigation-block__item-search-block">
                 <form>
-                    <div class="form-group mb-0">
+                    <div class="form-group mb-0 d-flex align-items-center ">
                         <input type="text" class="form-control" placeholder="網站搜索">
+                        <button class="ml-2 navigation-block__search-btn" type="button">搜索</button>
                     </div>
                 </form>
             </div>
