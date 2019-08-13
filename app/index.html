@@ -9,20 +9,21 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap&subset=chinese-simplified" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/jquery.scrollbar/jquery.scrollbar.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="paints-body">
 
 <header class="container-fluid">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark header">
+        <nav class="navbar navbar-expand-lg navbar-dark header p-0">
             <a class="navbar-brand header-logo" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="#">首页</a>
+                    <a class="nav-item nav-link" href="#">首页</a>
                     <a class="nav-item nav-link" href="#">目录</a>
                     <a class="nav-item nav-link" href="#">销售网点</a>
                     <a class="nav-item nav-link" href="#">关于工厂</a>
@@ -35,14 +36,14 @@
 </header>
 
 <main>
-    <section class="slider-section overflow-hidden">
+    <section class="container-fluid slider-section overflow-hidden">
         <div class="slider">
             <div class="slider-item">
                 <div class="container d-flex">
                     <div class="slider-item__content">
                         <span class="slider-item__title">俄羅斯藝術塗料從聖彼得堡</span>
                         <p class="slider-item__text">我们考虑到公认的大师和新手创作者的要求</p>
-                        <button type="button" class="btn btn-paints btn-light">我们的目录</button>
+                        <button type="button" class="btn btn-paints btn-light btn-slider">我们的目录</button>
                     </div>
                     <img class="slider-item__img" src="img/slider-img-1.png" alt="">
                 </div>
@@ -69,12 +70,12 @@
             </div>
         </div>
     </section>
-    <section class="mt-4">
+    <section class="container-fluid mt-4 category-section">
         <div class="container">
             <span class="h2 line-red d-flex justify-content-center mb-4">产品目录</span>
             <span class="h3 d-flex justify-content-center pt-2 mb-4">按類型</span>
             <div class="row">
-                <div class="col">
+                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
                     <div class="card card-category">
                         <div class="card-category__img">
                             <a href="#">
@@ -87,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
                     <div class="card card-category">
                         <div class="card-category__img">
                             <a href="#">
@@ -100,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
                     <div class="card card-category">
                         <div class="card-category__img">
                             <a href="#">
@@ -113,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
                     <div class="card card-category">
                         <div class="card-category__img">
                             <a href="#">
@@ -126,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
                     <div class="card card-category">
                         <div class="card-category__img">
                             <a href="#">
@@ -142,11 +143,11 @@
             </div>
         </div>
     </section>
-    <section class="section-brands">
+    <section class="container-fluid section-brands">
         <div class="container">
             <div class="h3 d-flex justify-content-center mb-3">按品牌</div>
             <div class="row">
-                <div class="col-4 mb-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
                     <div class="card card-brand">
                         <div class="card-brand__img">
                             <a href="#">
@@ -161,11 +162,11 @@
                             <h5 class="card-title">白夜系列</h5>
                             <p class="card-text">"专业水彩颜料系列“白夜”，“涅瓦色调”工厂的代表性产品。“白夜”，是经时间检验了的艺术水彩颜料。<br>
                                 适于追求颜色真实性和作品耐久性的艺术家使用。高品质的颜料和粘合剂、完善的制作技术 保证了水彩颜料的特性，如亮度、</p>
-                            <a href="#" class="btn btn-outline-secondary btn-paints">阅读更多</a>
+                            <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
                     <div class="card card-brand">
                         <div class="card-brand__img">
                             <a href="#">
@@ -179,11 +180,11 @@
                         <div class="card-body">
                             <h5 class="card-title">大师级系列</h5>
                             <p class="card-text">"大师级系列专注于对产品要求极高的客户，如专业艺术家，他们非常注重风格的独特性，希望绘画作品能够保存更长的时间。精心研究确定的成分比例、传统生产技术和严格的产品质量控制能够确保满足创作最重要的艺术作品对颜料的要求。</p>
-                            <a href="#" class="btn btn-outline-secondary btn-paints">阅读更多</a>
+                            <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
                     <div class="card card-brand">
                         <div class="card-brand__img">
                             <a href="#">
@@ -197,11 +198,11 @@
                         <div class="card-body">
                             <h5 class="card-title">拉多加系列</h5>
                             <p class="card-text">拉多加系列艺术颜料适于专业艺术家和装饰师使用。由于具有最佳性价比，所以是热爱绘画人士的最佳选择。 拉多加系列的主要特点是，都不是镉基和钴基颜料，而是有机颜料，其色调和特性最接近标准样板。</p>
-                            <a href="#" class="btn btn-outline-secondary btn-paints">阅读更多</a>
+                            <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
                     <div class="card card-brand">
                         <div class="card-brand__img">
                             <a href="#">
@@ -214,11 +215,11 @@
                         <div class="card-body">
                             <h5 class="card-title">索涅特系列</h5>
                             <p class="card-text">索涅特系列艺术颜料主要适于学习绘画的人使用。以耐光的无机颜料替代昂贵的有机颜料（镉系和钴系）。 索涅特系列艺术颜料是根据最新技术成果采用现代材料研制的，这使产品质量达到了高水平，同时，价格低廉，使每个人都有机会在美术创作中表现</p>
-                            <a href="#" class="btn btn-outline-secondary btn-paints">阅读更多</a>
+                            <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
                     <div class="card card-brand">
                         <div class="card-brand__img">
                             <a href="#">
@@ -231,11 +232,11 @@
                         <div class="card-body">
                             <h5 class="card-title">杰科拉系列</h5>
                             <p class="card-text">杰科拉系列汇集了现代手工所需的最佳材料，如贴纸画、剪贴簿等。干燥后，颜料不会脱落，它们能够牢固地粘结在物体的刚性（纸板、木材）和柔性（织物、皮革、纸张）表面上。颜料色谱由各种色调组成，包括光亮、</p>
-                            <a href="#" class="btn btn-outline-secondary btn-paints">阅读更多</a>
+                            <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-5">
                     <div class="card card-brand">
                         <div class="card-brand__img">
                             <a href="#">
@@ -249,7 +250,7 @@
                             <h5 class="card-title">“涅瓦色调”天然艺术画笔</h5>
                             <p class="card-text">"“涅瓦色调”品牌在艺术家中享有很高的声誉，因为自1934年以来，我们就制作艺术家创作所需的一切用品。 <br>我们公司的技术专家与专业艺术家密切合作，一直致力于丰富产品种类。
                                 画笔生产是一项多工序的复杂工作，多年来我们不断完善生产技术，依靠数十年画笔生产中</p>
-                            <a href="#" class="btn btn-outline-secondary btn-paints">阅读更多</a>
+                            <a href="#" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</a>
                         </div>
                     </div>
                 </div>
@@ -259,7 +260,7 @@
     <section class="container-fluid about-factory">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-12 order-md-2 order-lg-1">
                     <div class="about-factory__column">
                         <span class="h2 about-factory__title">关于“涅瓦色调”工厂</span>
                         <span class="about-factory_redLine"></span>
@@ -270,12 +271,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img class="w-100 h-100" src="img/about-factory-img.jpg" alt="">
+                <div class="col-lg-4 col-12 order-md-1 order-lg-2">
+                    <div class="about-factory__bg" style="background-image: url(img/about-factory-img.jpg)"></div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12 order-md-3 order-lg-3">
                     <div class="about-factory__column">
-                        <span class="h2 about-factory__title">&nbsp;</span>
+                        <span class="h2 about-factory__title d-none d-lg-block">&nbsp;</span>
                         <p class="pt-4">今天，“涅瓦色调”工厂的产品被专业艺术家和新手画家传颂。品牌“白夜、“大师班”出现在俄罗斯、独联体、波罗的海国家、欧洲、美国的著名艺术家的材料库中。广泛的销售区域和工厂的实力使工厂的艺术创作用品出口到了63个国家。
                             <br>
                             <br>
@@ -286,11 +287,11 @@
             </div>
         </div>
     </section>
-    <section class="mt-5">
+    <section class="container-fluid mt-5">
         <div class="container">
             <span class="h2 d-flex line-red justify-content-center">颜料的制作过程</span>
             <div class="row stages-color">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="card card-stage">
                         <div class="card-stage__img">
                             <a href="#">
@@ -303,7 +304,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="card card-stage">
                         <div class="card-stage__img">
                             <a href="#">
@@ -316,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="card card-stage">
                         <div class="card-stage__img">
                             <a href="#">
@@ -329,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="card card-stage">
                         <div class="card-stage__img">
                             <a href="#">
@@ -349,7 +350,7 @@
         <span class="h2 d-flex justify-content-center line-red">項目新聞</span>
         <div class="container mt-4">
             <div class="row">
-                <div class="col-5">
+                <div class="col-lg-5 col-md-12">
                     <div class="card project-news__card">
                         <div class="project-news__card-img">
                             <a href="#">
@@ -360,11 +361,11 @@
                         <div class="card-body">
                             <h5 class="card-title">文翠画是愿意开放的</h5>
                             <p class="card-text">中国文具展（“文化社”）成立于1953年，在商务部的支持下，已有100多年的历史，并成为“中国文具第一展”。<a href="#" class="project-news__link-arrow"></a></p>
-                            <button type="button" class="btn btn-outline-secondary btn-paints">阅读更多</button>
+                            <button type="button" class="btn btn-outline-secondary btn-paints btn-paints-width">阅读更多</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7 col-md-12">
                     <div class="project-news__list">
                         <div class="d-flex flex-column project-news__item">
                             <div class="media">
@@ -379,7 +380,7 @@
                                     <p>中国文具博览会（“文化社团”）成立于1953年，在商务部的支持下，已有100多年的历史和名声“第一次展览。<a href="#" class="project-news__link-arrow"></a></p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-outline-secondary btn-paints project-news__list-btn">阅读更多</button>
+                            <button type="button" class="btn btn-outline-secondary btn-paints project-news__list-btn btn-paints-width">阅读更多</button>
                         </div>
 
                         <div class="d-flex flex-column project-news__item">
@@ -395,7 +396,7 @@
                                     <p>中国文具博览会（“文化社团”）成立于1953年，在商务部的支持下，已有100多年的历史和名声“第一次展览。<a href="#" class="project-news__link-arrow"></a></p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-outline-secondary btn-paints project-news__list-btn">阅读更多</button>
+                            <button type="button" class="btn btn-outline-secondary btn-paints project-news__list-btn btn-paints-width">阅读更多</button>
                         </div>
 
                         <div class="d-flex flex-column project-news__item">
@@ -411,7 +412,7 @@
                                     <p>中国文具博览会（“文化社团”）成立于1953年，在商务部的支持下，已有100多年的历史和名声“第一次展览。<a href="#" class="project-news__link-arrow"></a></p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-outline-secondary btn-paints project-news__list-btn">阅读更多</button>
+                            <button type="button" class="btn btn-outline-secondary btn-paints project-news__list-btn btn-paints-width">阅读更多</button>
                         </div>
                     </div>
                 </div>
@@ -421,11 +422,11 @@
     <section class="container-fluid feedback">
         <div class="container">
             <div class="row">
-                <div class="col-4 d-flex">
-                    <div class="feedback-faq">
-                        <span class="h2 feedback_red-line">
+                <div class="col-lg-4 col-md-12">
+                    <span class="h2 feedback_red-line">
                             常见问题
                         </span>
+                    <div class="feedback-faq scrollbar-rail">
                         <div class="feedback-faq__paragraph">
                             <p>在绘图过程中涂料会出现什么问题?</p>
                             <p>水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。</p>
@@ -438,12 +439,34 @@
                             <p>在绘图过程中涂料会出现什么问题?</p>
                             <p>水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。</p>
                         </div>
-                    </div>
-                    <div class="separator">
-                        <span class="separator-circle"></span>
+
+                        <div class="feedback-faq__paragraph">
+                            <p>在绘图过程中涂料会出现什么问题?</p>
+                            <p>水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。</p>
+                        </div>
+
+                        <div class="feedback-faq__paragraph">
+                            <p>在绘图过程中涂料会出现什么问题?</p>
+                            <p>水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。</p>
+                        </div>
+
+                        <div class="feedback-faq__paragraph">
+                            <p>在绘图过程中涂料会出现什么问题?</p>
+                            <p>水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。</p>
+                        </div>
+
+                        <div class="feedback-faq__paragraph">
+                            <p>在绘图过程中涂料会出现什么问题?</p>
+                            <p>水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。</p>
+                        </div>
+
+                        <div class="feedback-faq__paragraph">
+                            <p>在绘图过程中涂料会出现什么问题?</p>
+                            <p>水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。水彩颜料的特征定义了独特的表现手法和水彩画的审美趣味，使其与其他绘画区别开来。</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 pl-3">
+                <div class="col-lg-4 col-md-12 pl-md-2 pl-lg-3">
                     <span class="h2 text-center feedback_red-line-curve">联系我们</span>
                     <form class="feedback-form">
                         <div class="form-group">
@@ -456,12 +479,12 @@
                             <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="电话">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="消息"></textarea>
+                            <textarea class="form-control pt-4" id="exampleFormControlTextarea1" rows="3" placeholder="消息"></textarea>
                         </div>
                         <button type="submit" class="btn feedback-form__btn mb-2">发送</button>
                     </form>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12">
                     <div>
                         <span class="h2 feedback_red-line">联系我们</span>
                         <table class="feedback-table">
@@ -579,13 +602,62 @@
     </div>
 </footer>
 
+<div class="navigation-block">
+    <ul class="navigation-block__list mt-auto">
+        <li class="navigation-block__item navigation-block__item-search">
+            <div class="navigation-block__link">
+                <span class="navigation-block__icon navigation-block__icon-magnifier"></span>
+                <p class="navigation-block__text">搜索</p>
+            </div>
+
+            <div class="navigation-block__item-search-block">
+                <form>
+                    <div class="form-group mb-0">
+                        <input type="text" class="form-control" placeholder="網站搜索">
+                    </div>
+                </form>
+            </div>
+        </li>
+        <li class="navigation-block__item navigation-block__phone">
+            <a class="navigation-block__link" href="tel:05352480037">
+                <span class="navigation-block__icon navigation-block__icon-phone"></span>
+                <p class="navigation-block__text">电话</p>
+            </a>
+            <div class="navigation-block__phone-block">
+                <a href="tel:05352480037">0-535-248-00-37</a>
+            </div>
+        </li>
+        <li class="navigation-block__item">
+            <a class="navigation-block__link" href="#">
+                <span class="navigation-block__icon navigation-block__icon-qq"></span>
+                <p class="navigation-block__text">公斤</p>
+            </a>
+        </li>
+        <li class="navigation-block__item navigation-block__qr">
+            <div class="navigation-block__link">
+                <span class="navigation-block__icon navigation-block__icon-qr"></span>
+                <p class="navigation-block__text">微信</p>
+            </div>
+            <div class="navigation-block__qr-block">
+                <img src="img/qr-big-img.png" alt="">
+            </div>
+        </li>
+    </ul>
+    <a class="navigation-block__btn mb-auto" href="#">
+        <span class="navigation-block__btn-arrow"></span>
+    </a>
+</div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="libs/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+
+<script src="js/main.js"></script>
 
 <!-- JS Inline -->
 <script type="text/javascript">
@@ -602,6 +674,11 @@
         buttons: true,
         slidesToShow: 1
     });
+
+    jQuery(document).ready(function(){
+        jQuery('.scrollbar-rail').scrollbar();
+    });
 </script>
+
 </body>
 </html>

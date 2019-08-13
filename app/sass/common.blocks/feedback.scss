@@ -2,6 +2,7 @@
   background: #F2F2F2;
   padding-top: 40px;
   padding-bottom: 60px;
+  overflow: hidden;
 
   .h2 {
     margin-bottom: 40px;
@@ -45,8 +46,10 @@
 }
 
 .feedback-faq {
+  height: 435px;
+  overflow-y: scroll;
   p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 23px;
     color: #555555;
     margin-bottom: 10px;
@@ -75,13 +78,21 @@
   width: 100%;
   height: 48px;
   border-radius: 0;
+  color: #ffffff;
+  transition: 0.3s;
+
+  &:hover {
+    color: #ffffff;
+    transition: 0.3s;
+    box-shadow: 0 0 0 0.2rem rgba(232, 113, 100, 0.5)
+  }
 }
 
 .feedback-table {
   margin-bottom: 42px;
 
   p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 23px;
     color: #555555;
     margin-bottom: 0;
@@ -89,7 +100,7 @@
 
   span {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 22px;
     color: #555555;
   }
@@ -105,4 +116,31 @@
   right: 0;
   left: 0;
   bottom: -60px;
+}
+
+@media (max-width: 991.98px) {
+  .feedback {
+    padding-bottom: 0;
+
+    .row > div {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .feedback-china-woman {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .feedback-china-woman {
+    width: 100%;
+  }
 }

@@ -1,0 +1,33 @@
+.scrollbar-rail > .scroll-element {
+  background-color: initial;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-bar {
+  background: #FAFAFA;
+  min-width: 10px;
+  height: 10px !important;
+  border: 6px solid;
+  border-color: #ED5453;
+  border-radius: 50%;
+  left: 12.5px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y {
+  width: 35px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-element_outer {
+  width: 36px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-element_size {
+  left: 23px;
+}
+
+.scrollbar-rail > .scroll-element .scroll-element_size {
+  background-color: #E0DDE7;
+}
+
+.scrollbar-rail > .scroll-element .scroll-element_outer:hover .scroll-element_size {
+  background-color: #E0DDE7;
+}

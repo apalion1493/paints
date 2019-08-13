@@ -1,9 +1,63 @@
 header {
   background: linear-gradient(186.89deg, #E96F67 8.79%, #EE5050 93.01%);
   min-height: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.header-logo {
-  font-size: 31px;
+.navbar-brand.header-logo {
+  font-size: 1.953em;
   font-weight: bold;
+  line-height: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  transition: 0.3s;
+  font-size: 1em;
+  line-height: 23px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    &:before {
+      content: '';
+      position: absolute;
+      width: 90%;
+      height: 2px;
+      background: #ffffff;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+      transition: 0.3s;
+    }
+  }
+}
+
+header .navbar-dark .navbar-toggler-icon {
+  background-image: url(../../img/burger.svg);
+}
+
+header .navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+@media (max-width: 991.98px) {
+  header .navbar-dark .navbar-nav .nav-link:hover:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background: #ffffff;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: initial;
+    transition: 0.3s;
+  }
 }

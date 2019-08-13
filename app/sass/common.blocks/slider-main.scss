@@ -1,13 +1,21 @@
 .slider-section {
   background: linear-gradient(226.78deg, #F7B3A1 9.61%, #F59696 93.01%);
 
+  &:hover {
+    .slick-arrow {
+      transition: 0.2s;
+      opacity: 0.6;
+    }
+  }
+
   .slick-arrow {
     background: #ffffff;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    opacity: 0.6;
-    z-index: 100;
+    opacity: 0;
+    z-index: 122;
+    transition: 0.2s;
   }
 
   .slick-prev {
@@ -77,7 +85,7 @@
 
   button {
     max-width: 138px;
-    font-size: 12.8px;
+    font-size: 0.8em;
     line-height: 19px;
     color: #333333;
     margin-top: 24px;
@@ -85,18 +93,36 @@
 }
 
 .slider-item__title {
-  font-size: 44px;
+  font-size: 2.75em;
   line-height: 64px;
   color: #FFFFFF;
   margin-bottom: 22px;
 }
 
 .slider-item__text {
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 29px;
   color: #FFFFFF;
 }
 
 .slider-item__img {
   width: 66%;
+}
+
+.btn.btn-slider {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .slick-slide img {
+    display: none;
+  }
+
+  .slider-item__content {
+    min-width: 100%;
+  }
+
 }

@@ -12,7 +12,6 @@
     left: 0;
     right: 0;
     bottom: -18px;
-    max-width: 109px;
   }
 
   .card-brand__img {
@@ -34,15 +33,21 @@
   }
 
   .card-title {
-    font-size: 25px;
+    font-size: 1.563em;
     line-height: 36px;
     color: #333333;
     margin-bottom: 9px;
   }
 
   .card-text {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 25px;
     color: #555555;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-brand {
+    min-height: auto;
   }
 }
