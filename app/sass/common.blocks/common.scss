@@ -194,6 +194,19 @@ body.paints-body {
   }
 }
 
+.watercolor-painting-content {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.category-section__link:hover {
+  text-decoration: none;
+}
+
+.section-brands__link:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 767.98px) {
   body.paints-body {
     font-size: 14px;

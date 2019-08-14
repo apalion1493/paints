@@ -52,6 +52,10 @@
   min-width: 71px;
   height: 70px;
   border-bottom: 1px solid #ECE9F3;
+
+  &:hover {
+    background: #5B5C60;
+  }
 }
 
 .navigation-block__icon-magnifier {

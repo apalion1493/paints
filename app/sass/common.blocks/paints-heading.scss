@@ -1,5 +1,10 @@
 .paints-heading {
   background: #F6F4F5;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .paints-heading__container {
@@ -17,28 +22,27 @@
   }
 }
 
-.paints-heading__bg-img {
-  right: -30px;
-  top: 0;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center top;
-  //background-position: 75% 100%;
-  background-size: auto 100%;
-  width: 80%;
-  height: 178px;
-}
+//.paints-heading__bg-img {
+//  right: -30px;
+//  top: 0;
+//  position: absolute;
+//  background-repeat: no-repeat;
+//  background-position: center top;
+//  background-size: auto 100%;
+//  width: 100%;
+//  height: 178px;
+//}
 
 @media (max-width: 991.98px) {
-  .paints-heading__bg-img {
-    background-size: 100% 100%;
-  }
+  //.paints-heading__bg-img {
+  //  background-size: auto 100%;
+  //}
 }
 
 @media (max-width: 575.98px) {
-  .paints-heading__bg-img {
-    background-size: cover;
-    width: 100%;
-    right: 0;
-  }
+  //.paints-heading__bg-img {
+  //  background-size: cover;
+  //  width: 100%;
+  //  right: 0;
+  //}
 }
