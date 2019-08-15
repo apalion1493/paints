@@ -30,8 +30,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/bootstrap/dist/js/bootstrap.min.js'
-        // 'app/js/**/*.js'
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
     ])
         .pipe(plumber())
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

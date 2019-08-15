@@ -1,0 +1,77 @@
+.paints-navigation {
+  position: relative;
+  max-width: 146px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .page-link {
+    border-radius: 2px;
+    border: 1px solid #EE5050;
+    color: #EC605C;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1em;
+    font-weight: bold;
+
+    &:hover {
+      border: 1px solid #EE5050;
+      background: rgba(238, 80, 80, 0.1);
+      color: #EC605C;
+    }
+  }
+
+  .pagination {
+    li {
+      margin-left: 4px;
+      margin-right: 4px;
+
+      &.active {
+        background: linear-gradient(258.9deg, #E96F67 8.79%, #EE5050 93.01%);
+        border-radius: 2px;
+
+        span {
+          background: linear-gradient(258.9deg, #E96F67 8.79%, #EE5050 93.01%);
+          border: 1px solid #EE5050;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 18px;
+    background: linear-gradient(258.9deg, #E96F67 8.79%, #EE5050 93.01%);
+    width: 15px;
+    height: 2px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 18px;
+    background: linear-gradient(258.9deg, #E96F67 8.79%, #EE5050 93.01%);
+    width: 15px;
+    height: 2px;
+  }
+}
+
+.paints-navigation_catalog {
+  margin: 66px auto;
+}
+
+.paints-navigation_news {
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .paints-navigation_news,
+  .paints-navigation_catalog {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}

@@ -1,50 +1,50 @@
 .card-brand {
-  min-height: 432px;
-  height: 100%;
+   min-height: 432px;
+   height: 100%;
 
-  .card-body {
-    padding-top: 15px;
-  }
+   .card-body {
+     padding-top: 15px;
+   }
 
-  .btn {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: -18px;
-  }
+   .btn {
+     position: absolute;
+     margin: auto;
+     left: 0;
+     right: 0;
+     bottom: -18px;
+   }
 
-  .card-brand__img {
-    min-height: 178px;
-    height: 178px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 8px;
+   .card-brand__img {
+     min-height: 178px;
+     height: 178px;
+     position: relative;
+     overflow: hidden;
+     margin-top: 8px;
 
-    a:hover {
-      text-decoration: none;
-    }
+     a:hover {
+       text-decoration: none;
+     }
 
-    .card-img-top {
-      position: absolute;
-      top: 0;
-      height: 100%;
-    }
-  }
+     .card-img-top {
+       position: absolute;
+       top: 0;
+       height: 100%;
+     }
+   }
 
-  .card-title {
-    font-size: 1.563em;
-    line-height: 36px;
-    color: #333333;
-    margin-bottom: 9px;
-  }
+   .card-title {
+     font-size: 1.563em;
+     line-height: 36px;
+     color: #333333;
+     margin-bottom: 9px;
+   }
 
-  .card-text {
-    font-size: 1em;
-    line-height: 25px;
-    color: #555555;
-  }
-}
+   .card-text {
+     font-size: 1em;
+     line-height: 25px;
+     color: #555555;
+   }
+ }
 
 @media (max-width: 575.98px) {
   .card-brand {

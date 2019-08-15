@@ -1,0 +1,41 @@
+.buy-ch__card-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+  img {
+    width: 115px;
+  }
+}
+
+.card-fourthView.buy-ch__card {
+  .card-title {
+    line-height: 17px;
+    color: #EE5050;
+    font-size: 0.75em;
+  }
+}
+
+.buy-ch {
+  padding-bottom: 200px;
+  padding-top: 30px;
+
+  .h2 {
+    margin-bottom: 26px;
+  }
+}
+
+.buy-ch__text-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 62px;
+}
+
+@media (max-width: 767.98px) {
+  .buy-ch {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+}

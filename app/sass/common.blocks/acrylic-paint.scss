@@ -1,0 +1,52 @@
+.acrylic-paint {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 80px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: url("../img/acrylic-paint__left-img.png") no-repeat center;
+    background-size: 100% auto;
+    width: 284px;
+    height: 451px;
+    left: 0;
+    top: 90px;
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background: url("../img/acrylic-paint__right-img.png") no-repeat center;
+    background-size: 100% auto;
+    width: 267px;
+    height: 509px;
+    right: 0;
+    top: 90px;
+    z-index: -1;
+  }
+}
+
+.acrylic-paint__text {
+  font-size: 1em;
+  color: #414247;
+  line-height: 23px;
+}
+
+.acrylic-paint__text-first {
+  margin-bottom: 38px;
+  margin-top: 32px;
+}
+
+@media (max-width: 767.98px) {
+  .acrylic-paint {
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}

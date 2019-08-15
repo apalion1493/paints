@@ -20,7 +20,8 @@ header .navbar-dark .navbar-nav .nav-link {
   font-size: 1em;
   line-height: 23px;
 
-  &:hover {
+  &:hover,
+  &.active {
     color: rgba(255, 255, 255, 1);
     &:before {
       content: '';

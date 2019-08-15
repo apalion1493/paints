@@ -1,0 +1,37 @@
+.article {
+  padding-bottom: 85px;
+
+  .h3 {
+    margin-bottom: 25px;
+  }
+
+  time {
+    font-size: 1em;
+    line-height: 23px;
+    text-align: center;
+    color: #777777;
+    margin-bottom: 25px;
+  }
+}
+
+.article__bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 371px;
+}
+
+.article__text {
+  margin-top: 45px;
+  margin-bottom: 0;
+  line-height: 23px;
+  font-size: 1em;
+  color: #000000;
+}
+
+@media (max-width: 991.98px) {
+  .article__bg {
+    height: 200px;
+  }
+}

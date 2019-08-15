@@ -1,0 +1,22 @@
+.list-group.paints-article-list {
+  .list-group-item.active {
+    border-color: #EE5050;
+    background: linear-gradient(216.9deg, #E96F67 8.79%, #EE5050 93.01%);
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .list-group-item {
+    font-size: 1em;
+    color: #000;
+    line-height: 23px;
+    padding: 15px 14px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .list-group.paints-article-list {
+    margin-bottom: 30px;
+  }
+}

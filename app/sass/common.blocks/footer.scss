@@ -20,7 +20,8 @@ footer {
     margin-right: 21px;
     position: relative;
 
-    &:hover {
+    &:hover,
+    &.active {
       &:before {
         content: '';
         position: absolute;
@@ -104,6 +105,14 @@ footer {
 
 .footer-contact__phone-text {
   margin-left: 17px;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
 }
 
 .footer-copy__container {
@@ -140,7 +149,7 @@ footer {
 
   p {
     margin-bottom: 0;
-    font-size: 0.8em;
+    font-size: 0.75em;
     line-height: 19px;
     color: #FFFFFF;
   }
