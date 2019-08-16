@@ -35,11 +35,6 @@
 }
 
 .project-news__list {
-  max-width: 585px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 15px;
-
   .media {
     &:last-child {
       margin-bottom: 0;
@@ -55,17 +50,58 @@
   }
 }
 
+.project-news__list {
+  .project-news__item:first-child {
+    float: left;
+    max-width: 41%;
+    margin-right: 30px;
+
+    .media {
+      flex-direction: column;
+    }
+
+    .project-news__img-block {
+      width: 100%;
+      max-width: 100%;
+      height: 280px;
+      margin-right: 0;
+    }
+
+    .media-body {
+      margin-top: 25px;
+      padding-left: 20px;
+
+      p:first-child {
+        font-size: 1.25em;
+        margin-bottom: 12px !important;
+      }
+    }
+
+    .project-news__list-btn {
+      margin-left: 20px;
+    }
+  }
+}
+
 .project-news__item {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  max-width: 55%;
 }
 
 .project-news__img-block {
   overflow: hidden;
   position: relative;
-
-  img {
-    border-radius: 6px;
-  }
+  max-width: 166px;
+  width: 100%;
+  height: 118px;
+  margin-right: 24px;
+  border-radius: 6px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .project-news__list-btn {
@@ -107,9 +143,38 @@
     padding-left: 0;
     margin-top: 20px;
   }
+
+  .project-news__list .project-news__item:first-child {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .project-news__item {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
+  .project-news__list .project-news__item:first-child {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+
+    .media-body {
+      padding-left: 0;
+      margin-top: 0;
+    }
+
+    .project-news__list-btn {
+      margin-left: 0;
+    }
+
+    .project-news__img-block {
+      height: 150px;
+    }
+  }
+
   .project-news__item {
     .media {
       flex-direction: column;
@@ -118,10 +183,8 @@
 
   .project-news__img-block {
     width: 100%;
-    img {
-      margin-right: 0 !important;
-      width: 100%;
-    }
+    max-width: 100%;
+    height: 150px;
   }
 
   .project-news__list-btn {

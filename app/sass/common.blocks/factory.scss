@@ -1,5 +1,9 @@
 .factory-text {
   padding-top: 44px;
+
+  .h2 {
+    color: #555555;
+  }
 }
 
 .factory-text__container {
@@ -24,6 +28,7 @@
 .factory-image {
   .h3 {
     margin-bottom: 32px;
+    color: #555555;
   }
 
   figure > p {
@@ -111,6 +116,7 @@
 
   .h3 {
     margin-bottom: 28px;
+    color: #555;
   }
 }
 

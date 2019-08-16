@@ -101,11 +101,16 @@
   height: 42px;
   margin-right: 14px;
   transition: 0.3s;
+  opacity: 0;
 
   &:hover {
     transition: 0.3s;
     box-shadow: 0 0 0 0.2rem rgba(232, 113, 100, 0.5)
   }
+}
+
+.navigation-block__btn.show {
+  opacity: 1;
 }
 
 .navigation-block__btn-arrow {
